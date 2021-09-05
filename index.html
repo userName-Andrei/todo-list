@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="todo">
+            <div class="todo-insert">
+                <div class="todo-insert__top">
+                    <h1>Список дел</h1>
+                    <textarea class="text" placeholder="Введите событие"></textarea>
+                </div>
+                <div class="todo-insert__send">
+                    <label>
+                        <input type="checkbox" name="important" class="checkbox">
+                        <span class="fakeCheckbox"></span>
+                        Важно?
+                    </label>
+                    <button type="button" name="btn-delete-all">Удалить всё</button>
+                    <button type="button" name="btn-send">Отправить!</button>
+                </div>
+            </div>
+            <div class="todo-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
