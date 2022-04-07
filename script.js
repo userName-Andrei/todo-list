@@ -108,12 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
   function bindBtn() {
     send.addEventListener('click', e => {
       e.preventDefault();
-      localStorageArr.push({
-        important: checkbox.checked,
-        message: text.value
-      });
-      setLocalStorage(localStorageArr);
-      initTodoList();
+
+      if (text.value.trim() !== '') {
+        console.log(text.value);
+        localStorageArr.push({
+          important: checkbox.checked,
+          message: text.value
+        });
+        setLocalStorage(localStorageArr);
+        initTodoList();
+      }
+
       text.value = '';
     });
   } //установка localstorage 
